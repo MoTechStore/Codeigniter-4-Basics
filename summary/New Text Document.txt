@@ -1,0 +1,3 @@
+The controller is what will become the center of every request to your web application.
+
+Like any PHP class, you refer to it within your controllers as $thi
