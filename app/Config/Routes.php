@@ -21,6 +21,8 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->get('/pdf', 'PdfController::index');
 $routes->get('/product', 'ProductController::index');
+$routes->add('user/add', 'User::add');
+$routes->post('user/save', 'User::save');
 $routes->match(['get', 'post'], 'PdfController/htmlToPDF', 'PdfController::htmlToPDF');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
